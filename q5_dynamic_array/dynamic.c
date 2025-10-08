@@ -61,6 +61,7 @@ int main() {
     printf("Sum: %d\n", sum);
 
     // TODO: free(arr);
+    free(arr);
 
     return 0;
 }
