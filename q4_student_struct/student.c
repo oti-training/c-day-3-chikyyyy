@@ -26,20 +26,22 @@ void update_grade(Student *s, int new_grade) {
     // Hint: Use the arrow operator -> to access and modify the grade member of the struct.
 
     // Placeholder
-    printf("update_grade not implemented.\n");
+    s->grade = new_grade; 
+    printf("update_grade implementing.\n");
 }
 
 int main() {
     printf("Exercise 4: Student Struct with Pointers\n");
 
     // TODO: Define Student struct here or in header
-    // Student student;
-    // strcpy(student.name, "Alice");
-    // student.grade = 80;
-    // printf("Initial: Name: %s, Grade: %d\n", student.name, student.grade);
+     Student student;
+     strcpy(student.name, "Alice");
+     student.grade = 80;
+     printf("Initial: Name: %s, Grade: %d\n", student.name, student.grade);
 
     // TODO: Call update_grade(&student, 90);
-    // printf("Updated: Name: %s, Grade: %d\n", student.name, student.grade);
+     update_grade(&student, 90);
+     printf("Updated: Name: %s, Grade: %d\n", student.name, student.grade);
 
     // Placeholder output
     printf("Implement the TODOs to see correct output.\n");
